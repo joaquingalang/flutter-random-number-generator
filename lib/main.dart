@@ -31,15 +31,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Random Number Generator',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
-      ),
+      backgroundColor: Color(0xFFFFFDF9),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -48,8 +40,9 @@ class _HomePageState extends State<HomePage> {
             Text(
               '$randomNumber',
               style: TextStyle(
-                fontSize: 120,
+                fontSize: 150,
                 fontWeight: FontWeight.bold,
+                color: Color(0xFF321F47),
               ),
             ),
             Column(
